@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/standard/styles.php" />
+<link rel="stylesheet" type="text/css" href="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/styles.php" />
+<meta name="description" content="Aloja los cursos académicos de pregrado y posgrado de la Universidad de Antioquia." /><script type="text/javascript"  src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/yui/yahoo/yahoo-min.js"></script><script type="text/javascript"  src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/yui/event/event-min.js"></script><script type="text/javascript"  src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/yui/connection/connection-min.js"></script><script type="text/javascript"  src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/swfobject/swfobject.js"></script><script type="text/javascript">
+//<![CDATA[
+  var flashversion = swfobject.getFlashPlayerVersion();
+  YAHOO.util.Connect.asyncRequest('GET','http://aprendeenlinea.udea.edu.co/lms/moodle/login/environment.php?sesskey=7kHXMT9yt7&flashversion='+flashversion.major+'.'+flashversion.minor+'.'+flashversion.release);
+//]]>
+</script>
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/standard/styles_ie6.css" />
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4734309-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+
+</script>
+
+
+    <meta name="keywords" content="moodle, Aprende en Línea " />
+    <title>Aprende en Línea</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/icon.png" />
+	<script src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/yui/yahoo-dom-event/yahoo-dom-event.js"></script>
+	<script src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/yui/animation/animation-min.js"></script>	
+	<script src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/js/nav_plataformas.js"></script>	
+    <script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/speller/spellChecker.js"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/editor/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/editor/tinymce.js.php?course=1"></script>
+<!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(http://aprendeenlinea.udea.edu.co/lms/moodle/lib/csshover.htc);} /*]]>*/</style>-->
+
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/javascript-static.js"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/javascript-mod.php"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/overlib/overlib.js"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/overlib/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/cookies.js"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/ufo.js"></script>
+<script type="text/javascript" src="http://aprendeenlinea.udea.edu.co/lms/moodle/lib/dropdown.js"></script>  
+
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+setTimeout('fix_column_widths()', 20);
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function openpopup(url, name, options, fullscreen) {
+    var fullurl = "http://aprendeenlinea.udea.edu.co/lms/moodle" + url;
+    var windowobj = window.open(fullurl, name, options);
+    if (!windowobj) {
+        return true;
+    }
+    if (fullscreen) {
+        windowobj.moveTo(0, 0);
+        windowobj.resizeTo(screen.availWidth, screen.availHeight);
+    }
+    windowobj.focus();
+    return false;
+}
+
+function uncheckall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = false;
+    }
+}
+
+function checkall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = true;
+    }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)"));
+		}
+	}
+	else{
+		arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)"));
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+//]]>
+</script>
+</head>
+
+<body  class="course course-1 dir-ltr lang-es_utf8" id="site-index">
+    
+<div id="page">
+<a class="skip" href="#maincontent">Ir a contenido principal</a>
+    <div style="position: absolute; top: 0px; left: 10px;">
+        <a href="http://www.udea.edu.co" target="_blank" style="text-decoration: none;">
+            <img src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/transp.gif" width="60px" height="70px" />
+        </a>
+    </div>
+    <div id="header" class="clearfix">
+        <div id="divCabecera">
+        	<div id="divCabeceraIzq">
+            	<div id="divCabeceraDer">
+                	<div id="divCabeceraCen">
+						<img id="img_plataformas" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/degradados/academica_plataformasbutton.png" align="right" />
+                        <div id="plataformas">
+							<ul>
+								<li class="first_li"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/" target="_new">Plataforma educativa UdeA</a></li>
+								<li><a href="http://aprendeenlinea.udea.edu.co/lms/investigacion/" target="_new">Moodle para investigadores</a></li>
+								<li><a href="http://aprendeenlinea.udea.edu.co/lms/extension/" target="_new">Moodle extensión</a></li>
+								<li><a href="http://aprendeenlinea.udea.edu.co/lms/admision/" target="_new">Moodle Admisiones</a></li>
+								<li><a href="http://docencia.udea.edu.co/lms/moodle/" target="_new">Moodle docencia</a></li>
+								<li><a href="http://aprendeenlinea.udea.edu.co/lms/ocw/" target="_new">OCW - Open Course Ware</a></li>
+								<li><a href="http://aprendeenlinea.udea.edu.co/lms/men_udea/" target="_new">Formación docentes MEN-UdeA</a></li>
+								<li><a href="http://aprendeenlinea.udea.edu.co/lms/encurso/" target="_new">EN-CURSO - Orientación Pruebas Selección</a></li>
+								<li class="last_li"><a href="http://aprendeenlinea.udea.edu.co/" target="_new">Home Aprende en Línea</a></li>
+							</ul>						</div>
+                    </div>
+                </div>
+            </div>
+            <div class="headermenu"><div class="logininfo">En este momento está usando el acceso para invitados (<a  href="https://aprendeenlinea.udea.edu.co/lms/moodle/login/index.php">Entrar</a>)</div><form action="http://aprendeenlinea.udea.edu.co/lms/moodle/course/jumpto.php" method="get"  id="chooselang" class="popupform"><div><label for="chooselang_jump"><span class="accesshide " >Idioma</span></label><select id="chooselang_jump" name="jump" onchange="self.location=document.getElementById('chooselang').jump.options[document.getElementById('chooselang').jump.selectedIndex].value;">
+   <option value="http://aprendeenlinea.udea.edu.co/lms/moodle/index.php?lang=de_utf8">Deutsch (de)</option>
+   <option value="http://aprendeenlinea.udea.edu.co/lms/moodle/index.php?lang=en_utf8">English (en)</option>
+   <option value="http://aprendeenlinea.udea.edu.co/lms/moodle/index.php?lang=es_utf8" selected="selected">Español - Internacional (es)</option>
+   <option value="http://aprendeenlinea.udea.edu.co/lms/moodle/index.php?lang=fr_utf8">Français (fr)</option>
+   <option value="http://aprendeenlinea.udea.edu.co/lms/moodle/index.php?lang=it_utf8">Italiano (it)</option>
+   <option value="http://aprendeenlinea.udea.edu.co/lms/moodle/index.php?lang=pt_br_utf8">Português - Brasil (pt_br)</option>
+</select><input type="hidden" name="sesskey" value="7kHXMT9yt7" /><div id="noscriptchooselang" style="display: inline;"><input type="submit" value="Ir" /></div><script type="text/javascript">
+//<![CDATA[
+document.getElementById("noscriptchooselang").style.display = "none";
+//]]>
+</script></div></form></div>
+        </div>
+    </div>
+        <hr />
+    <!-- END OF HEADER -->
+    <div id="content">
+
+
+<table id="layout-table" summary="layout">
+  <tr>
+  <td style="width: 210px;" id="left-column"><div><div  id="inst32595" class="block_html sideblock"><div class="content"><img src="http://aprendeenlinea.udea.edu.co/lms/moodle/file.php/1/aprendeenlinea_logo_200px.png"/></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst32595","Mostrar bloque ","Ocultar bloque ");
+//]]>
+</script><span id="sb-1" class="skip-block-to"></span><a href="#sb-2" class="skip-block">Saltar Ingresar</a><div  id="inst2779" class="block_loginsara sideblock"><div class="header"><div class="title"><input type="image" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/t/switch_minus.gif" id="togglehide_inst2779" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Mostrar bloque Ingresar', 'Ocultar bloque Ingresar'); return false;" alt="Ocultar bloque Ingresar" title="Ocultar bloque Ingresar" class="hide-show-image" /><h2>Ingresar</h2></div></div><div class="content">
+<form class="loginform" id="loginsara" method="post" action="https://aprendeenlinea.udea.edu.co/sara/cargar.php?sModulo=Usuarios&regresar=https%3A%2F%2Faprendeenlinea.udea.edu.co%2Flms%2Fmoodle%2Flogin%2Findex.php&soloSi=NO"><div class="c1"><label for="login_username">Cuenta</label>: <input type="text" name="usuario" id="loginsara_username" value="" /></div><div class="c1"><label for="login_password">Clave</label>: <input type="password" name="clave" id="loginsara_password" value="" /></div><div class="c1 btn"><input type="submit" value="Entrar" /></div></form>
+</div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst2779","Mostrar bloque Ingresar","Ocultar bloque Ingresar");
+//]]>
+</script><span id="sb-2" class="skip-block-to"></span><div  id="inst50495" class="block_html sideblock"><div class="content"><p><a title="" href="https://goo.gl/R5OQl2" target="_blank"><img title="" src="http://aprendeenlinea.udea.edu.co/lms/moodle/file.php/1/imagenes/banner_imagen_alma.png" alt="" /></a></p></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst50495","Mostrar bloque ","Ocultar bloque ");
+//]]>
+</script><span id="sb-3" class="skip-block-to"></span><a href="#sb-4" class="skip-block">Saltar Enlaces de inter&eacute;s</a><div  id="inst3761" class="block_site_main_menu sideblock"><div class="header"><div class="title"><input type="image" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/t/switch_minus.gif" id="togglehide_inst3761" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Mostrar bloque Enlaces de inter&eacute;s', 'Ocultar bloque Enlaces de inter&eacute;s'); return false;" alt="Ocultar bloque Enlaces de inter&eacute;s" title="Ocultar bloque Enlaces de inter&eacute;s" class="hide-show-image" /><h2>Enlaces de inter&eacute;s</h2></div></div><div class="content">
+<ul class='list'>
+<li class="r0"><div class="icon column c0"><img src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/mod/resource/icon.gif" class="icon" alt="" /></div><div class="column c1"><a title="Recursos"  onclick="this.target='resource2'; return openpopup('/mod/resource/view.php?inpopup=true&amp;id=3','resource2','resizable=1,scrollbars=1,directories=,location=,menubar=,toolbar=,status=1,width=680,height=450');" href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/resource/view.php?id=3">Herramientas de Software</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/mod/forum/icon.gif" class="icon" alt="" /></div><div class="column c1"><a title="Foros"   href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/forum/view.php?id=29167">Novedades</a></div></li>
+<li class="r0"><div class="icon column c0"></div><div class="column c1"> <a title="portal" href="http://aprendeenlinea.udea.edu.co/">.:: Portal Aprende en Línea</a> </div></li>
+<li class="r1"><div class="icon column c0"><img src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/f/web.gif" class="icon" alt="" /></div><div class="column c1"><a title="Recursos"  onclick="this.target='resource22514'; return openpopup('/mod/resource/view.php?inpopup=true&amp;id=49444','resource22514','resizable=1,scrollbars=1,directories=1,location=1,menubar=1,toolbar=1,status=1,width=620,height=450');" href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/resource/view.php?id=49444">Examen de Familiarización</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/mod/feedback/icon.gif" class="icon" alt="" /></div><div class="column c1"><a title="Encuestas"   href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/feedback/view.php?id=57207">¿Qué materiales educativos digitales prefieres?</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/mod/glossary/icon.gif" class="icon" alt="" /></div><div class="column c1"><a title="Glosarios"   href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/glossary/view.php?id=68158">Videos educativos de la UdeA</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/f/web.gif" class="icon" alt="" /></div><div class="column c1"><a title="Recursos"   href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/resource/view.php?id=80076">Blogs en Aprende en línea</a></div></li>
+</ul>
+</div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst3761","Mostrar bloque Enlaces de inter&eacute;s","Ocultar bloque Enlaces de inter&eacute;s");
+//]]>
+</script><span id="sb-4" class="skip-block-to"></span><div  id="inst35123" class="block_html sideblock"><div class="content"><div style="text-align: left;"><a href="https://twitter.com/Aprende_enLinea" target="_blank"><img style="vertical-align: middle;" src="http://twitter-badges.s3.amazonaws.com/t_logo-a.png" alt="Seguir a IntegraTIC_udea en Twitter" width="26" /></a> <span style="font-size: x-small;"><a href="https://twitter.com/Aprende_enLinea" target="_blank"><strong>@Aprende_enLinea</strong></a><br /></span></div>
+<div style="text-align: left;"><img style="vertical-align: middle;" title="Facebook" src="http://www.layher.es/sites/default/files/icono-facebook.png" alt="Facebook" width="26" height="26" /><span style="font-size: x-small;"> <a href="https://www.facebook.com/AprendeenLineaUdeA" target="_blank"><strong>Portal Aprende en Línea - UdeA</strong></a></span></div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst35123","Mostrar bloque ","Ocultar bloque ");
+//]]>
+</script><span id="sb-5" class="skip-block-to"></span></div></td><td id="middle-column"><span id="maincontent"></span><div><div class="generalbox sitetopic box"><ul class="section img-text">
+<li class="activity label" id="module-34011"><span class="label"><div style="text-align: justify;">
+<table style="width: 95%;" border="0" align="center">
+<tbody>
+<tr>
+<td valign="top" width="100%">
+<div style="text-align: center;"> </div>
+<div style="text-align: justify; font-family: tahoma,arial,helvetica,sans-serif;">
+<div style="text-align: right;">
+<div style="text-align: center;"><span style="font-weight: bold;"><span style="font-family: 'trebuchet ms', verdana, arial, helvetica, sans-serif; font-size: small; color: #009900;"> Bienvenidos y bienvenidas a nuestra plataforma educativa Aprende en línea<br /></span></span></div>
+</div>
+<span style="font-family: arial, helvetica, sans-serif; font-size: small;"><span style="font-family: trebuchet ms,verdana,arial,helvetica,sans-serif;">El <span style="font-weight: bold; font-style: italic;">Programa Integración de Tecnologías a la Docencia</span> de la Vicerrectoría de Docencia ofrece este espacio de apoyo para los procesos de formación de los distintos programas de la Universidad de Antioquia como una respuesta a las demandas de la sociedad actual, la cual exige del desarrollo de nuevas competencias que tienen que ver con el uso de las tecnologías de la información y la comunicación. Así mismo, se busca potencializar la creación de entornos para el aprendizaje donde la interacción entre profesores y estudiantes esté mediada por nuevos roles, estrategias, medios y métodos para la enseñaza y el aprendizaje, que aporten a la consolidación de un modelo educativo acorde con las exigencias actuales.</span></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></span></li>
+</ul><!--class='section'-->
+
+</div><h2 class="headingblock header ">Categorías</h2><div class="generalbox categorybox box">
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=50">Vicerrectoría de Docencia</a></td><td valign="top" class="category number">6</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=100">Capacitación Docente</a></td><td valign="top" class="category number">5</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=57">Cursos virtuales</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=59">Programa integración de TIC a la docencia</a></td><td valign="top" class="category number">33</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=60">Programa desarrollo pedagógico docente</a></td><td valign="top" class="category number">7</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=90">Bienestar Universitario</a></td><td valign="top" class="category number">4</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=39">Departamento de Bibliotecas</a></td><td valign="top" class="category number">2</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=78">Corporación Académica Ambiental</a></td><td valign="top" class="category number">3</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=107">Dirección de Desarrollo Institucional</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=28">Escuela de Microbiología</a></td><td valign="top" class="category number">12</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=104">Ciclo de complementación</a></td><td valign="top" class="category number">15</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=25">Escuela de Idiomas</a></td><td valign="top" class="category number">32</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=14">Escuela de Nutrición y Dietetica</a></td><td valign="top" class="category number">29</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=16">Escuela Interamericana de Bibliotecología</a></td><td valign="top" class="category number">43</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=23">Facultad de Artes</a></td><td valign="top" class="category number">24</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=24">Artes Visuales</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=87">Música</a></td><td valign="top" class="category number">4</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=18">Facultad de Ciencias Agrarias</a></td><td valign="top" class="category number">20</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=102">Doctorado</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=54">Especialización Médica en Pequeñas Especies Animales</a></td><td valign="top" class="category number">3</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=93">Prácticas académicas</a></td><td valign="top" class="category number">3</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=105">Ingeniería Acuícola</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=109">Medicina veterinaria y zootecnia</a></td><td valign="top" class="category number">4</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=110">Posgrados</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=3">Facultad de Ciencias Economicas</a></td><td valign="top" class="category number">29</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=6">Administración</a></td><td valign="top" class="category number">8</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=7">Contaduría</a></td><td valign="top" class="category number">16</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=53">Economía</a></td><td valign="top" class="category number">9</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=8">Facultad de Ciencias Exactas y Naturales</a></td><td valign="top" class="category number">28</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=103">Instituto de Biología</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=83">Instituto de Física</a></td><td valign="top" class="category number">2</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=99">Instituto de Matemáticas</a></td><td valign="top" class="category number">2</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=101">Instituto de Química</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=4">Facultad de Ciencias Sociales y Humanas</a></td><td valign="top" class="category number">4</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=34">Antropología</a></td><td valign="top" class="category number">5</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=94">Doctorado</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=82">Historia</a></td><td valign="top" class="category number">5</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=95">Maestría</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=5">Trabajo Social</a></td><td valign="top" class="category number">32</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="40" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=84">Regionalización</a></td><td valign="top" class="category number">42</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=17">Facultad de Comunicaciones</a></td><td valign="top" class="category number">21</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=98">Maestría</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=9">Facultad de Derecho y Ciencias Politicas</a></td><td valign="top" class="category number">9</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=10">Facultad de Educación</a></td><td valign="top" class="category number">34</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=74">Maestrías</a></td><td valign="top" class="category number">23</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=77">Regionalización</a></td><td valign="top" class="category number">2</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=81">Lic. Pedagogía Infantil</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=65">Facultad de Enfermería</a></td><td valign="top" class="category number">5</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=66">Maestría en Salud Colectiva</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=19">Facultad de Ingeniería</a></td><td valign="top" class="category number">17</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=22">DRAI</a></td><td valign="top" class="category number">2</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=89">Ingeniería Civil</a></td><td valign="top" class="category number">3</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=20">Ingenieria de Sistemas</a></td><td valign="top" class="category number">2</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=64">Ingenieria Industrial</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=38">Ingeniería Química</a></td><td valign="top" class="category number"></td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=79">Maestría en ingeniería</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=36">Regionalización</a></td><td valign="top" class="category number">5</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="40" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=37">Seccional Caucasia</a></td><td valign="top" class="category number">2</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=43">Facultad de Medicina</a></td><td valign="top" class="category number">11</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=80">Facultad de Odontología</a></td><td valign="top" class="category number">12</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=35">Facultad de Química Farmacéutica</a></td><td valign="top" class="category number">6</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=76">Regionalización</a></td><td valign="top" class="category number">7</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=92">Especialización Tecnológica en Regencia de Farmacia</a></td><td valign="top" class="category number"></td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=55">Facultad Nacional de Salud Pública</a></td><td valign="top" class="category number">13</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=91">Posgrado</a></td><td valign="top" class="category number">6</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=106">Ingeniería Agropecuaria</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=85">Instituto de Educación Física y Deportes</a></td><td valign="top" class="category number">7</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=75">Instituto de Estudios Políticos </a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=15">Instituto de Filosofia</a></td><td valign="top" class="category number">4</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=44">Grupos de Investigación</a></td><td valign="top" class="category number"></td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=45">Escuela de Nutrición y Dietetica</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=58">Regionalización</a></td><td valign="top" class="category number"></td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=96">Vicerrectoría Administrativa</a></td><td valign="top" class="category number"></td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=97">Desarrollo del Talento Humano</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=86">Vicerrectoría de Investigación</a></td><td valign="top" class="category number">1</td></tr></table>
+
+<table class="categorylist"><tr><td class="category indentation" valign="top"><img class="spacer" height="10" width="20" src="http://aprendeenlinea.udea.edu.co/lms/moodle/pix/spacer.gif" alt="" /><br />
+</td><td valign="top" class="category name"><a  href="http://aprendeenlinea.udea.edu.co/lms/moodle/course/category.php?id=108">Gestión tecnológica</a></td><td valign="top" class="category number">2</td></tr></table></div><form id="coursesearch" action="http://aprendeenlinea.udea.edu.co/lms/moodle/course/search.php" method="get"><fieldset class="coursesearchbox invisiblefieldset"><label for="shortsearchbox">Buscar cursos: </label><input type="text" id="shortsearchbox" size="12" name="search" alt="Buscar cursos" value="" /><input type="submit" value="Ir" /></fieldset></form><br /></div></td><td style="width: 180px;" id="right-column"><div><a href="#sb-6" class="skip-block">Saltar Videos educativos</a><div  id="inst18366" class="block_glossary_random sideblock"><div class="header"><div class="title"><input type="image" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/t/switch_minus.gif" id="togglehide_inst18366" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Mostrar bloque Videos educativos', 'Ocultar bloque Videos educativos'); return false;" alt="Ocultar bloque Videos educativos" title="Ocultar bloque Videos educativos" class="hide-show-image" /><h2>Videos educativos</h2></div></div><div class="content"><h2>Memoria y olvido desde el punto de vista del psicoanálisis</h2><p><span style="font-size: 12px;">Video de la serie "<strong>Cátedra Colombiana de Psicología Mercedes Rodrigo Versión VII</strong>"<br /><br /></span></p>
+<div style="text-align: center;"><object style="width: 200px; height: 150px;" width="200" height="150" data="http://aprendeenlinea.udea.edu.co/recursos/reproductor/videoplayerUdeA.swf" type="application/x-shockwave-flash"><param name="data" value="http://aprendeenlinea.udea.edu.co/recursos/reproductor/videoplayerUdeA.swf" /><param name="allowfullscreen" value="true" /><param name="src" value="http://aprendeenlinea.udea.edu.co/recursos/reproductor/videoplayerUdeA.swf" /><param name="flashvars" value="file=http://media.udea.edu.co/files2/catedra_psicologia/memoria_olvido.flv&amp;buffTime=30&amp;playAuto=0&amp;imagePrev=http://media.udea.edu.co/files2/catedra_psicologia/memoria_olvido.jpg&amp;buffTime=60" /></object> <br />
+<div style="text-align: left;"><span style="font-size: xx-small;"><span style="font-size: x-small;"><span style="font-weight: bold; font-family: verdana,arial,helvetica,sans-serif; text-decoration: underline;">Créditos:</span></span><br style="font-family: verdana,arial,helvetica,sans-serif;" /></span><span style="font-size: xx-small;"><span style="font-family: verdana,arial,helvetica,sans-serif;"><strong>Conferencista invitado:</strong> Sociólogo y psicoanalista Mario Elkin Ramírez<br /> <strong>Filmación y edición:</strong> Martha Cecilia Ortiz <br /> Universidad de Antioquia <br /> 2011</span></span></div>
+</div><div class="footer"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/glossary/view.php?id=68158" title="Más videos...">Más videos...</a></div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst18366","Mostrar bloque Videos educativos","Ocultar bloque Videos educativos");
+//]]>
+</script><span id="sb-6" class="skip-block-to"></span><a href="#sb-7" class="skip-block">Saltar Usuarios en línea</a><div  id="inst10109" class="block_online_users sideblock"><div class="header"><div class="title"><input type="image" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/t/switch_minus.gif" id="togglehide_inst10109" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Mostrar bloque Usuarios en línea', 'Ocultar bloque Usuarios en línea'); return false;" alt="Ocultar bloque Usuarios en línea" title="Ocultar bloque Usuarios en línea" class="hide-show-image" /><h2>Usuarios en línea</h2></div></div><div class="content"><div class="info">(últimos 5 minutos)</div><ul class='list'>
+<li class="listentry"><div class="user"><img class="userpicture defaultuserpic" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/u/f2.png" height="16" width="16" title="" alt=""  />Invitado</div></li>
+<li class="listentry"><div class="user"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/user/view.php?id=28045&amp;course=1" title="5 segundos"><img class="userpicture" src="http://aprendeenlinea.udea.edu.co/lms/moodle/user/pix.php/28045/f2.jpg" height="16" width="16" title="" alt=""  />Lynda Jhailu Tamayo Arango</a></div></li>
+<li class="listentry"><div class="user"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/user/view.php?id=6615&amp;course=1" title="18 segundos"><img class="userpicture" src="http://aprendeenlinea.udea.edu.co/lms/moodle/user/pix.php/6615/f2.jpg" height="16" width="16" title="" alt=""  />Luz Estella Ciro Cifuentes</a></div></li>
+<li class="listentry"><div class="user"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/user/view.php?id=52387&amp;course=1" title="48 segundos"><img class="userpicture defaultuserpic" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/u/f2.png" height="16" width="16" title="" alt=""  />Alvaro Alonso Montoya Alzate</a></div></li>
+<li class="listentry"><div class="user"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/user/view.php?id=62298&amp;course=1" title="1 minutos 49 segundos"><img class="userpicture" src="http://aprendeenlinea.udea.edu.co/lms/moodle/user/pix.php/62298/f2.jpg" height="16" width="16" title="" alt=""  />Laura Yepes Tobón</a></div></li>
+<li class="listentry"><div class="user"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/user/view.php?id=64760&amp;course=1" title="3 minutos 18 segundos"><img class="userpicture defaultuserpic" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/u/f2.png" height="16" width="16" title="" alt=""  />María Alejandra López Parra</a></div></li>
+<li class="listentry"><div class="user"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/user/view.php?id=1434&amp;course=1" title="3 minutos 43 segundos"><img class="userpicture" src="http://aprendeenlinea.udea.edu.co/lms/moodle/user/pix.php/1434/f2.jpg" height="16" width="16" title="" alt=""  />Juan Pablo Mejia Guisao</a></div></li>
+<li class="listentry"><div class="user"><a href="http://aprendeenlinea.udea.edu.co/lms/moodle/user/view.php?id=61795&amp;course=1" title="4 minutos 14 segundos"><img class="userpicture defaultuserpic" src="http://aprendeenlinea.udea.edu.co/lms/moodle/theme/udea_verde/pix/u/f2.png" height="16" width="16" title="" alt=""  />Rafael Antonio Durango Sepulveda</a></div></li>
+</ul><div class="clearer"><!-- --></div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst10109","Mostrar bloque Usuarios en línea","Ocultar bloque Usuarios en línea");
+//]]>
+</script><span id="sb-7" class="skip-block-to"></span></div></td>
+  </tr>
+</table>
+
+
+</div> <!-- end div containerContent -->
+<!-- START OF FOOTER -->
+<div id="footer">
+
+<p class="helplink"></p><div class="logininfo">En este momento está usando el acceso para invitados (<a  href="https://aprendeenlinea.udea.edu.co/lms/moodle/login/index.php">Entrar</a>)</div><div class="sitelink"><a title="Moodle" href="http://moodle.org/"><img style="width:100px;height:30px" src="pix/moodlelogo.gif" alt="moodlelogo" /></a></div><div class="performanceinfo"><span class="timeused">0.33223 secs</span> <span class="memoryused">RAM: 13.3Mb</span> <span class="memoryused">RAM peak: 13.4Mb</span> <span class="included">Included 76 files</span> <span class="posixtimes">ticks: 33 user: 31 sys: 1 cuser: 0 csys: 0</span> <span class="serverload">Load average: 3.59</span> <span class="rcache">Record cache hit/miss ratio : 0/0</span> </div>
+
+</div>
+</div>
+</body>
+</html>
